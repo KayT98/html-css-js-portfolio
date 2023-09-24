@@ -13,7 +13,7 @@ html, body {
     scroll-padding-top: 10em;
     cursor: url('../images/cursor.png'), auto; 
     /**background-image: linear-gradient(to right, #fc5c7d, #6a82fb);**/
-    background: url('../images/sky.jpg') no-repeat center center fixed;
+    background: url(../images/sky.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
      -moz-background-size: cover;
