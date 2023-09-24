@@ -195,11 +195,20 @@ li {
     max-width: 100%;
     width: auto;
 }
-
-.tiger:hover {
-    width: 20%; height: 20%;
+#time {
+    font-size: 1em;
+    transition: all 1s ease-in-out;
 }
-
+#time:hover {
+    font-size: 2em;
+}
+.tiger {
+    width: 20%; height: 20%;
+    transition: all 1s ease-in-out;
+}
+.tiger:hover {
+    width: 30%; height: 30%;
+}
 /* mobile - tablet breakpoint */
 @media (min-width: 320px) and (max-width: 1199px) {
     html, body {
