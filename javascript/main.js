@@ -15,11 +15,17 @@ function error() {
 
 
 setInterval(() =>{
-
-const time = new Date();
-const current_time = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
-
-document.getElementById('time').innerHTML = current_time
+  let time = new Date();
+  console.log(time.toLocaleString('en-US', 
+  {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: true}));
+document.getElementById('time').innerHTML = time
 }, 1000)
 
 const images = document.querySelectorAll('#slider img');
