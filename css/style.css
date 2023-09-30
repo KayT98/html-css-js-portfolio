@@ -181,7 +181,7 @@ li {
     color: antiquewhite; 
     font-size: 50px; 
     line-height: 1em;
-    display: inline-block; animation-delay: 4s
+    display: inline-block;
 }
 
 @keyframes typing {
