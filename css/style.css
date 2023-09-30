@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Kanit:wght@300&family=Roboto:wght@900&family=Saira+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Handjet:wght@500&family=Kanit:wght@300&family=Noto+Serif+Vithkuqi&family=Roboto:wght@900&family=Saira+Condensed&display=swap');
+
 h1 {
     font-family: 'Barriecito', cursive;
     text-align: center;
@@ -18,7 +19,7 @@ html, body {
      -moz-background-size: cover;
      -o-background-size: cover;
      box-sizing: border-box;
-     padding: 0; margin: 0
+     padding: 0; margin: 0;
 }
 aside h1 {
     color: #EFDCCE; font-size: 2em
@@ -78,6 +79,7 @@ footer h1 {
 }
   
 .skills {
+    margin-top: 150px;
     grid-area: skills;
     border-radius: 20px;
     font-family: 'Handjet', cursive;
@@ -183,14 +185,14 @@ li {
     line-height: 1em;
     display: inline-block;
 }
-
+/**
 @keyframes typing {
-    from {max-width: 0} to {max-width:100%} /**cursor stops at the end of text, must be max-width**/
+    from {max-width: 0} to {max-width:100%} /**cursor stops at the end of text, must be max-width
     }
     
     @keyframes blink {
-    from, to {border-color: transparent} 50% {border-color: antiquewhite} /**blinking cursor**/
-    }
+    from, to {border-color: transparent} 50% {border-color: antiquewhite} /**blinking cursor
+    }**/
 .intro {
     max-width: 100%;
     width: auto;
@@ -209,6 +211,9 @@ li {
 .tiger:hover {
     width: 30%; height: 30%;
 }
+
+
+
 /* mobile - tablet breakpoint */
 @media (min-width: 320px) and (max-width: 1199px) {
     html, body {

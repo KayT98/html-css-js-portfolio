@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden
+}
+  
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .item:not(:first-child) {
+    opacity: 0;
+    transition: opacity 0.5s, transform 2s;
+  }
+  
+.left {
+    transform-origin: left center;
+    transform: translateX(-50%);
+}
+  
+.right {
+    transform-origin: right center;
+    transform: translateX(50%);
+}
+  
+.down {
+    transform-origin: down center;
+    transform: translateY(-50%);
+}
+
+.slide-in {
+    opacity: 1 !important;
+    transform: translateX(0);
+}
+
+.slide-down {
+    opacity: 1 !important;
+    transform: translateY(0);
+}

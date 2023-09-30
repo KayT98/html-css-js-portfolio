@@ -1,4 +1,4 @@
-
+//error when use failed to enter required information
 function error() {
     let username = document.getElementById("username").value
     let email = document.getElementById("email").value
@@ -13,7 +13,7 @@ function error() {
     }
 }
 
-
+//clock
 setInterval(() =>{
   let time = new Date();
   console.log(time.toLocaleString('en-US', 
@@ -28,6 +28,7 @@ setInterval(() =>{
 document.getElementById('time').innerHTML = time
 }, 1000)
 
+//slider images
 const images = document.querySelectorAll('#slider img');
 const previousImage = document.getElementById("prev");
 const nextImage = document.getElementById("next");
@@ -67,5 +68,4 @@ previousImage.addEventListener('click', function() {
 nextImage.addEventListener('click', function() {
   slideRight();
 });
-
 
