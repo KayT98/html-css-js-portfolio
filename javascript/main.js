@@ -16,7 +16,7 @@ function error() {
 //clock
 setInterval(() =>{
   let time = new Date();
-  console.log(time.toLocaleString('en-US', 
+  time.toLocaleString('en-US', 
   {
     year: 'numeric',
     month: 'long',
@@ -24,7 +24,7 @@ setInterval(() =>{
     hour: 'numeric',
     minute: 'numeric',
     second: 'numeric',
-    hour12: true}));
+    hour12: true});
 document.getElementById('time').innerHTML = time
 }, 1000)
 

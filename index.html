@@ -8,8 +8,8 @@
   <link rel="icon" type="image/x-icon" href="./images/rocket.ico">
   <title>Kay Truong :)</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/slideinout.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="./javascript/onload.js"></script>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -20,7 +20,6 @@
             <ul class="navlist">
                 <li><a href="#name">KAY TRUONG</a></li>	
                 <li><a href="#top">ABOUT ME</a></li>	
-                <li><a href="#project">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT ME</a></li>
                 <li><a href="hobby.html">Hobbies</a></li>		
             </ul>
@@ -31,21 +30,16 @@
     <div class="grid-container">
       <header class="grid-item header">
         <div class="howdy"> <!--My intro-->
-            <h1 class="typingAni" id="name">Howdy! My name is kay</h1> <img src="./images/tiger.png" alt="tiger" class="tiger">
+            <h1 class="typingAni" id="name"></h1> <img src="./images/tiger.png" alt="tiger" class="tiger">
             <p id="time" style="color: white;"></p>
         </div>
         <br>
         <img src="./images/howdy.gif" alt="howdy" width="200" height="200">
       </header>
-      
-    <main class="grid-item main">
+      <main class="grid-item main">
         <div id="top">
-            <section class="item">
-                <h1>A little bit about myself</h1>
-                <h6>**I don't take picture, but you can see me on LinkedIn, I like my name in lowercase XD**</h6>
-            </section>
-            <br>
-            <section class="item right">
+            <h1>A little bit about myself</h1>
+            <h6>**I don't take picture, but you can see me on LinkedIn, I like my name in lowercase XD**</h6>
             <p>I graduated from Northeastern State University in Oklahoma, Spring 2022 with degree in Computer Science. A hardworking and passionate job seeker with 
                 strong organizational skills, 
                 with experience in HTML5 & CSS3, JavaScript(ES6), ReactJS, Front End Development and UI Design. 
@@ -53,97 +47,85 @@
                 I've gained a lots of valuable experience in Website Development during my time there. In my spare time, I study Frontend stuff and practice some coding 
                 for more experience.
                 I'm currently working as FC Associate at TUL5 and studying Amazon Software Development Training Program Cohort 4 at Correlation One.</p>
-           
-
-                <h6>**I signed NDA with my internship company but I think it has expired, you can see one of the UI tasks I've done using React, Tailwind/CSS**</h6>
-        
-                    <video playsinline autoplay loop muted> <!--playsinline allows video to autoplay on mobile **without it video won't autoplay on mobile**-->
-                        <source src="./images/responsivebadges.mp4" title="badges" type="video/mp4">
-                        Your browser does not support the video tag, please use other browsers, recommend Chrome.
-                    </video>
-            </section>
-            <br>
-            <section class="item left">
-                    <p>I mainly worked on UI since I was a member of UXUI Dev team, backend devs will take care of the rest.
-                        I translated Figma file created by designers and imported the badges from 2 separate folders, will display 5 unlocked badges after users unlocked them through 
-                        a certain activity, and hide others. 
-                        Users can check other badges (both unlocked and locked) by clicking Display All Badges.
-                        Responsive on both mobile and desktop. Tailwind was a pain to write but everything turned out great.
-                        I'm pretty bad at designing, I can't really make good webpage without the helps of Desginers XD.
-                    </p>
-            </section>
-
-                    <br><br>
-            
-            <div id="project">               
+    
+            <h6>**I signed NDA with my internship company but I think it has expired, you can see one of the UI tasks I've done using React, Tailwind/CSS**</h6>
+    
+                <video playsinline autoplay loop muted> <!--playsinline allows video to autoplay on mobile **without it video won't autoplay on mobile**-->
+                    <source src="./images/responsivebadges.mp4" title="badges" type="video/mp4">
+                    Your browser does not support the video tag, please use other browsers, recommend Chrome.
+                </video>
+    
+                <p>I mainly worked on UI since I was a member of UXUI Dev team, backend devs will take care of the rest.
+                    I translated Figma file created by designers and imported the badges from 2 separate folders, will display 5 unlocked badges after users unlocked them through 
+                    a certain activity, and hide others. 
+                    Users can check other badges (both unlocked and locked) by clicking Display All Badges.
+                    Responsive on both mobile and desktop. Tailwind was a pain to write but everything turned out great.
+                    I'm pretty bad at designing, I can't really make good webpage without the helps of Desginers XD.
+                </p>
+                    <br>
                 <h1>Some of my personal projects</h1>
                     <!--CARDS in BOOTSTRAP-->
-                <section class="item down">   
-                        <div class="container mt-5">
-                            <div class="row">
-                                <div class="col col-md-6 py-5 Card">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="./images/api.png" class="card-img-top" alt="api">
-                                        <div class="card-body">
-                                            <h5 class="card-title">API Fetch (React & CSS)</h5>
-                                            <p class="card-text">Fetch cat & dog images with vote buttons.</p>
-                                            <a href="https://github.com/KayT98/API-Fetch" class="btn btn-primary">Github</a>
-                                        </div>
-                                    </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col col-md-6 py-5 Card">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./images/api.png" class="card-img-top" alt="api">
+                                <div class="card-body">
+                                    <h5 class="card-title">API Fetch (React & CSS)</h5>
+                                    <p class="card-text">Fetch cat & dog images with vote buttons.</p>
+                                    <a href="https://github.com/KayT98/API-Fetch" class="btn btn-primary">Github</a>
                                 </div>
-                                
-                                <div class="col col-md-6 Card">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="./images/clock.png" class="card-img-top" alt="clock">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Wallpaper Clock (C#)</h5>
-                                            <p class="card-text">Clock that change wallpapers based on time of day.</p>
-                                            <a href="https://github.com/KayT98/WallpaperClock" class="btn btn-primary">Github</a>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col col-md-6 Card">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./images/clock.png" class="card-img-top" alt="clock">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wallpaper Clock (C#)</h5>
+                                    <p class="card-text">Clock that change wallpapers based on time of day.</p>
+                                    <a href="https://github.com/KayT98/WallpaperClock" class="btn btn-primary">Github</a>
                                 </div>
-                </section>
-            </div>      
-    </div> 
-    </main>
+                            </div>
+                        </div>
+        </div> 
+      </main>
 
 
       <aside class="grid-item skills">
-        <div>     
-                <h1>Skills</h1>
-                <section class="item down">
-                    <h3>Experience</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>ES6</li>
-                        <li>ReactJS</li>
-                        <li>Figma</li>
-                        <li>UI Design</li>
-                        <li>Git/Github/Gitlab</li>
-                        <li>SQL/MySQL</li>
-                    </ul>
-        
-                    <h3>Familiar With</h1>
+        <div>
+            <h1>Skills</h1>
+                <h3>Experience</h3>
                 <ul>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>OOP</li>
-                    <li>Photoshop</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>ES6</li>
+                    <li>ReactJS</li>
+                    <li>Figma</li>
+                    <li>UI Design</li>
+                    <li>Git/Github/Gitlab</li>
+                    <li>SQL/MySQL</li>
                 </ul>
-            </section>
-        </div>    
+    
+                <h3>Familiar With</h1>
+        <ul>
+            <li>C#</li>
+            <li>Python</li>
+            <li>OOP</li>
+            <li>Photoshop</li>
+        </ul>
+        </div>
       </aside>
       
-      <footer class="grid-item contact">     
-        <div id="contact">      
-            <h1>Best way to contact me</h1>        
-                <form>
-                        <input type="text" placeholder="Name" id="username" >           
-                        <input type="text" placeholder="Email" id="email" >          
-                        <textarea rows="2" cols="50" name="message" placeholder="Write your message here....."></textarea>
-                    <button class="btn btn-success" type="submit" onclick="error()">Shoot me a message</button>
-                </form>
+      <footer class="grid-item contact">
+        <div id="contact">
+            <h1>Best way to contact me</h1>
+            <form>
+                    <input type="text" placeholder="Name" id="username" >           
+                    <input type="text" placeholder="Email" id="email" >          
+                    <textarea rows="2" cols="50" name="message" placeholder="Write your message here....."></textarea>
+                <button class="btn btn-success" type="submit" onclick="error()">Shoot me a message</button>
+            </form>
         </div>
         <br><br>
 
@@ -153,10 +135,9 @@
             <a href="https://github.com/KayT98"><img src="./images/github.png" alt="github"></a>
         </div>
       </footer>
-
     </div>
   </div>
   <script src="./javascript/main.js"></script>
-  <script src="./javascript/slideinout.js"></script>
+  
 </body>
 </html>
